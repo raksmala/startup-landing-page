@@ -1,0 +1,68 @@
+.header {
+    &-title {
+        margin-left: 50px;
+        color: $color-real-heading;
+        font-family: $font-family;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: -0.292683px;
+    }
+
+    &-nav {
+        display: flex;
+        margin-right: 50px;
+        color: $color-real-heading;
+
+        &-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            color: inherit;
+            font-family: $font-family;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            border-bottom: 2px solid $color-real-white;
+            padding: 0 20px;
+
+            &:hover {
+                border-bottom: 2px solid $color-real-heading;
+            }
+        }
+
+        &-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid $color-real-grey;
+            border-radius: 100px;
+            width: 100px;
+            height: 40px;
+
+            &:hover {
+                border: 2px solid $color-real-heading;
+            }
+            
+            &-text {
+                color: inherit;
+                font-family: $font-family;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                /* identical to box height, or 144% */
+            }
+        }
+
+        &-list:hover,
+        &-btn:hover {
+            cursor: pointer;
+        }
+    }
+}
